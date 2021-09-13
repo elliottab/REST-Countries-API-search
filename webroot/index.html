@@ -1,0 +1,29 @@
+﻿<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Countries Search</title>
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+      <h1> Countries Search</h1>
+      <script src="/js/app.js"></script>
+      <div id="searchForm">
+        <input type="search" id="searchBar" size="50">
+        <button onclick="search()"> Search</button>
+        <br>
+        <input type="radio" id="countryNameBtn" name="searchType" value="Name" checked>
+        <label for="countryNameBtn">Name</label>
+        <input type="radio" id="countryCodeBtn" name="searchType" value="Code">
+        <label for="countryCodeBtn">Code</label>
+      </div>
+      <br>
+      <div id="resultsBox"  class="resultsGridContainer">
+      </div>
+      <div id=counter></div>
+      <div class="row">
+          <div id="regions" class="col"></div>
+          <div id="subregions" class="col"></div>
+      </div>  
+</body>
+</html>
